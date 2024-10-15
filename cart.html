@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cake</title>
+    <script src="https://kit.fontawesome.com/b4fc90475b.js" crossorigin="anonymous"></script>
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body>
+
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <a href="index.html" class="logo">
+                <h1 class="logoName">Harshit's Bakery </h1>
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="products.html">product</a>
+            <a href="#blogs">blogs</a>
+            <a href="#review">review</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="icon">
+            <h6 id="cart_number"></h6>
+            <a href="cart.html"><img src="images/cart-shopping-solid.svg"
+                    style="width: 22px; position: relative; top: 5px; right: 20px;" onclick="" alt=""></a>
+
+            <i class="fas fa-search" id="search"></i>
+            <!-- <i class="fa-solid fa-cart-shopping"  id="cart"></i> -->
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+        <script>
+            let cartQuantity = 0;
+            document.querySelector('#cart_number').innerText = ` ${cartQuantity} `;
+        </script>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <main>
+        <div class="bag-page">
+            <div class="bag-items-container">
+            </div>
+            <div class="bag-summary">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- home section end here  -->
+
+
+
+
+
+
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <h1 class="logoName"> Harshit's Bakery </h1>
+                </div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus maxime quod.</p>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+            <div class="box">
+                <h3>Extra link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>our services</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
+                <a href="#"> <i class="fas fa-envelope"></i>dannydesigner@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            Made with ❤️ <span>Ronit Soni</span> || all rights reserved ! 
+        </div>
+    </footer>
+
+    <script>
+        let navbar = document.querySelector('.navbar');
+        document.querySelector('#menu-bar').onclick = () => {
+            navbar.classList.toggle('active');
+        }
+
+
+
+        let search = document.querySelector('.search');
+        document.querySelector('#search').onclick = () => {
+            search.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+
+
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="items.js"></script>
+    <script src="cart.js"></script>
+    <script src="bag.js"></script>
+    
+
+
+
+</body>
+
+</html>
